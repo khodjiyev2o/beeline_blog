@@ -40,7 +40,7 @@ source venv\bin\activate
 
 For example: 
 ````
-AWS_DEFAULT_REGION="sa-east-1"
+DJANGO_SETTINGS_MODULE="config.settings.production"
 ````
 5. Build  the docker image
 
