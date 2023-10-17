@@ -2,15 +2,12 @@ Django Blog
 Blog Project on Django Templates
 Python and Django:
 
-
-Visit the [Deployed Version](http://13.114.193.241/) 
-
 ## Getting Started
 
 1. Clone the project from the Github repo :
 
 ````
-git clone https://github.com/khodjiyev2o/CSV_GENERATOR
+git clone https://github.com/khodjiyev2o/beeline_blog
 ````
 
 2. Go to the project directory -> ./beeline_blog
