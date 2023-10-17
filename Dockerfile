@@ -32,8 +32,6 @@ RUN pip install -r production.txt
 # create directory for the app user
 RUN mkdir -p /home/app
 
-# create the app user
-
 # create the appropriate directories
 ENV HOME=/home/app
 ENV APP_HOME=/home/app/web
@@ -50,6 +48,6 @@ COPY ./entrypoint.sh $APP_HOME
 COPY . $APP_HOME
 
 
-# run entrypoint.prod.sh
+# run entrypoint.sh
 RUN ["chmod", "+x", "/home/app/web/entrypoint.sh"]
 ENTRYPOINT ["/home/app/web/entrypoint.sh"]
