@@ -33,7 +33,7 @@ if UNIX/LINUX, then :
 ````
 source venv\bin\activate
 ````
-4. Create the .env file and fill out the missing values. You can look at all missing values in sample.env file:
+4. Create the .env file and fill out the missing values. You can look at all missing values in env.example file:
 
 For example: 
 ````
