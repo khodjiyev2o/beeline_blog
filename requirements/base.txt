@@ -1,0 +1,8 @@
+django
+psycopg2-binary
+python-environ
+django-cors-headers
+django-jazzmin
+drf-yasg
+django-modeltranslation
+pillow==10.0.0
