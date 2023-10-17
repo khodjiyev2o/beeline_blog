@@ -53,18 +53,12 @@ $ docker build -t app .
 
 ````
 
-$  docker run --restart=always --name csv_generator -dp 80:8000 app 
+$  docker run --restart=always --name blog -dp 80:8000 app 
 
 ````
 6. Run the docker with volumes for auto-update after code changes
 ```
 docker run --rm -it --mount src="$(pwd)",target=/usr/src/app,type=bind -dp 8000:8000  app
-
-```
-
-7. Run celery for background tasks :
-```
-docker exec csv_generator celery -A config worker -l info 
 
 ```
 
