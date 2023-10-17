@@ -39,6 +39,11 @@ For example:
 ````
 DJANGO_SETTINGS_MODULE="config.settings.production"
 ````
+4. Run tests: 
+
+````
+python manage.py test
+````
 5. Build  the docker image
 
 ````
@@ -53,14 +58,8 @@ $ docker build -t app .
 $  docker run --restart=always --name blog -dp 80:8000 app 
 
 ````
-6. Run the docker with volumes for auto-update after code changes
+7Run the docker with volumes for auto-update after code changes
 ```
 docker run --rm -it --mount src="$(pwd)",target=/usr/src/app,type=bind -dp 8000:8000  app
 
 ```
-
-8. Open your browser and paste one of the urls :
-
-* http://127.0.0.1:80
-* http://localhost:80
-* http://0.0.0.0:80
